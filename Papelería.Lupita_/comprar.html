@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Comprar Productos</title>
+</head>
+
+<body bgcolor="#fdebf3">
+
+<h1>COMPRA TUS PRODUCTOS</h1>
+
+<form action="gracias.html">
+
+<h3>Selecciona tus productos:</h3>
+
+<input type="checkbox"> L&aacute;pices - $6<br>
+Cantidad: <input type="number" min="1"><br><br>
+
+<input type="checkbox"> Cuadernos - $30<br>
+Cantidad: <input type="number" min="1"><br><br>
+
+<input type="checkbox"> Colores - $30<br>
+Cantidad: <input type="number" min="1"><br><br>
+
+<input type="checkbox"> Hojas blancas - $1<br>
+Cantidad: <input type="number" min="1"><br><br>
+
+<input type="checkbox"> Engrapadora - $60<br>
+Cantidad: <input type="number" min="1"><br><br>
+
+<input type="checkbox"> Pegamento en barra - $28<br>
+Cantidad: <input type="number" min="1"><br><br>
+
+<input type="checkbox"> Cartulina - $12<br>
+Cantidad: <input type="number" min="1"><br><br>
+
+<input type="checkbox"> Cinta adhesiva - $10<br>
+Cantidad: <input type="number" min="1"><br><br>
+
+<h3>Datos del cliente:</h3>
+
+Nombre:<br>
+<input type="text"><br><br>
+
+Direcci&oacute;n:<br>
+<input type="text"><br><br>
+
+Tel&eacute;fono:<br>
+<input type="text"><br><br>
+
+<br>
+
+<input type="submit" value="COMPRAR">
+
+</form>
+
+<br>
+
+<a href="index.html">Volver</a>
+
+<audio loop id="musicaFondo">
+
+  <source src="musica.mp3" type="audio/mpeg">
+
+</audio>
+
+<script>
+
+const musica =
+document.getElementById("musicaFondo");
+
+musica.volume = 0.30;
+
+// iniciar música al primer click
+
+document.addEventListener("click", () => {
+
+  musica.play();
+
+}, { once: true });
+
+</script>
+</body>
+</html>

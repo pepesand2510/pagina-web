@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Bienvenido</title>
+</head>
+
+<body>
+
+<h1>Bienvenido a Papeleria Lupita</h1>
+
+<p>Sesion iniciada correctamente</p>
+
+<a href="index.html">Ir al inicio</a>
+
+<audio loop id="musicaFondo">
+
+  <source src="musica.mp3" type="audio/mpeg">
+
+</audio>
+
+<script>
+
+const musica =
+document.getElementById("musicaFondo");
+
+musica.volume = 0.30;
+
+// iniciar música al primer click
+
+document.addEventListener("click", () => {
+
+  musica.play();
+
+}, { once: true });
+
+</script>
+</body>
+</html>
