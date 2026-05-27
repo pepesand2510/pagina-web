@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Utiles</title>
+</head>
+
+<body>
+
+<h1>UTILES ESCOLARES</h1>
+
+<ul>
+<li>Lápices</li>
+<li>Plumas (azul, negra, roja)</li>
+<li>Colores</li>
+<li>Marcadores</li>
+<li>Sacapuntas</li>
+<li>Borrador</li>
+<li>Cuadernos (rayados, cuadriculados)</li>
+<li>Libretas</li>
+<li>Hojas blancas</li>
+<li>Hojas de colores</li>
+<li>Cartulinas</li>
+<li>Regla</li>
+<li>Escuadra</li>
+<li>Transportador</li>
+<li>Compás</li>
+<li>Tijeras</li>
+<li>Pegamento (barra o líquido)</li>
+<li>Cinta adhesiva</li>
+<li>Engrapadora</li>
+<li>Clips</li>
+<li>Carpetas</li>
+<li>Folder</li>
+<li>Mochila</li>
+<li>Lapicera (estuche)</li>
+<li>Calculadora</li>
+<li>Agenda</li>
+</ul>
+
+<a href="index.html">Volver</a>
+
+<audio loop id="musicaFondo">
+
+  <source src="musica.mp3" type="audio/mpeg">
+
+</audio>
+
+<script>
+
+const musica =
+document.getElementById("musicaFondo");
+
+musica.volume = 0.30;
+
+// iniciar música al primer click
+
+document.addEventListener("click", () => {
+
+  musica.play();
+
+}, { once: true });
+
+</script>
+</body>
+</html>

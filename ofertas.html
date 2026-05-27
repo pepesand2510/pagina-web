@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Ofertas</title>
+</head>
+
+<body>
+
+<h1>OFERTAS</h1>
+<h3>DEL 04-05-26 HASTA EL 04-06-26</h3>
+
+<ol>
+<li>10% de descuento en mochilas</li>
+<li>Compra una engrapadora y ll&eacute;vate grapas gratis</li>
+<li>Kit de oficina (plumas, hojas y carpetas) en promoci&oacute;n</li>
+<li>Paquete escolar b&aacute;sico a precio especial</li>
+<li>3 l&aacute;pices por el precio de 2</li>
+</ol>
+
+<a href="index.html">Volver</a>
+
+<audio loop id="musicaFondo">
+
+  <source src="musica.mp3" type="audio/mpeg">
+
+</audio>
+
+<script>
+
+const musica =
+document.getElementById("musicaFondo");
+
+musica.volume = 0.30;
+
+// iniciar música al primer click
+
+document.addEventListener("click", () => {
+
+  musica.play();
+
+}, { once: true });
+
+</script>
+</body>
+</html>

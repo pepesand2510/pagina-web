@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>quienes somos</title>
+</head>
+
+<body>
+
+<h1>¿QUIENES SOMOS?</h1>
+
+<p>
+Papelería Lupita es un negocio dedicado a ofrecer<br>
+productos escolares y de oficina de buena calidad<br>
+a precios accesibles.
+</p>
+
+<p>
+Nuestro objetivo es brindar un excelente servicio a<br>
+estudiantes, maestros y público en general.
+</p>
+
+<p>
+Contamos con una gran variedad de productos como<br>
+útiles escolares, cuadernos y materiales de oficina.
+</p>
+
+<p>
+Trabajamos cada día para mejorar y ofrecer la mejor<br>
+ atención a nuestros clientes.
+</p>
+
+<a href="index.html">Volver</a>
+
+<audio loop id="musicaFondo">
+
+  <source src="musica.mp3" type="audio/mpeg">
+
+</audio>
+
+<script>
+
+const musica =
+document.getElementById("musicaFondo");
+
+musica.volume = 0.30;
+
+// iniciar música al primer click
+
+document.addEventListener("click", () => {
+
+  musica.play();
+
+}, { once: true });
+
+</script>
+</body>
+</html>
